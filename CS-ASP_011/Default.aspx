@@ -23,6 +23,16 @@
         <asp:Label ID="resultLabel" runat="server"></asp:Label>
         <br />
         <asp:Label ID="catLabel" runat="server"></asp:Label>
+        <br />
+        <br />
+        If you could only eat one food for the rest of your live, what would you choose?<br />
+        <asp:RadioButton ID="pizzaRadioButton" runat="server" GroupName="foodGroup" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Pizza" />
+        <br />
+        <asp:RadioButton ID="tacosRadioButton" runat="server" GroupName="foodGroup" Text="Tacos" OnCheckedChanged="tacosRadioButton_CheckedChanged" />
+        <br />
+        <asp:RadioButton ID="iceCreamRadioButton" runat="server" GroupName="foodGroup" Text="ice cream" OnCheckedChanged="iceCreamRadioButton_CheckedChanged" />
+        <br />
+        <asp:RadioButton ID="turkeyRadioButton" runat="server" GroupName="foodGroup" Text="turkey and gravy" />
     </form>
 </body>
 </html>

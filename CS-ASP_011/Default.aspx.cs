@@ -14,7 +14,7 @@ namespace CS_ASP_011
 
         }
 
-        protected void okButton_Click(object sender, EventArgs e)
+       /* protected void okButton_Click(object sender, EventArgs e)
         {
             if (firstTextBox.Text == secondTextBox.Text)
             {
@@ -25,12 +25,11 @@ namespace CS_ASP_011
                 resultLabel.Text = "These two values are not equal.";
 
             }
-        }
+        }*/
 
         protected void catcheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (catcheckBox.Checked == true)
-
             {
                 catLabel.Text = "Yes! I like cats too!";
             }
@@ -38,6 +37,48 @@ namespace CS_ASP_011
             {
                 catLabel.Text = "Cats are amazing";
             }
+
+
+        }
+
+        protected void okButton_Click(object sender, EventArgs e)
+        {
+            if (pizzaRadioButton.Checked)
+            {
+                resultLabel.Text = "You must be from Chicago.";
+            }
+            else if (tacosRadioButton.Checked)
+            {
+                resultLabel.Text = "You must be from California.";
+            }
+            else if (iceCreamRadioButton.Checked)
+            {
+                resultLabel.Text =
+                    "You must be from Alaska.";
+            }
+            else if (turkeyRadioButton.Checked)
+            {
+                resultLabel.Text = "You should be vegan";
+            }
+            else
+            {
+                resultLabel.Text = "Please select one of the options";
+            }
+        }
+
+        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void tacosRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void iceCreamRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
